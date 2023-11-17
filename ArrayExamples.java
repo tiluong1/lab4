@@ -3,10 +3,10 @@
 public class ArrayExamples {
 
   // Changes the input array to be in reversed order
-  static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
-    }
+  @Test
+  public void testAverageWithouttLowest2() {
+    double[] input1 = {3.0,2.0,1.0};
+    assertEquals(2.5,ArrayExamples.averageWithoutLowest(input1), 0.0001);
   }
 
   // Returns a *new* array with all the elements of the input array in reversed
